@@ -7,13 +7,14 @@ public class TetrisMindGUI {
 
     public static void main(String[] args) {
         JFrame frame = new JFrame(TITLE);
+        frame.setLayout(null);
         frame.setSize(WIDTH, HEIGHT);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        JLabel label = new JLabel("Hello, World!");
-        frame.add(label);
+        Board board = new Board();
+        frame.add(board);
 
-        frame.add(new Board());
+        frame.add(new InformationButton(frame, "Hello World!"));
 
         frame.setVisible(true);
     }
