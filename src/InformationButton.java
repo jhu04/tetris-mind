@@ -1,26 +1,27 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class InformationButton extends JButton {
+public class InformationButton {
     private static final Icon DEFAULT_ICON = new ImageIcon("assets/info-32x32.png");
-    private final JFrame frame;
-    private final String text;
+    private final JButton button;
 
-    public InformationButton(JFrame frame, Icon icon, String text) {
-        super(icon);
-        this.frame = frame;
-        this.text = text;
+    public InformationButton(Component parentComponent, Icon icon, String information) {
+        this.button = new JButton(icon);
 
-        setPreferredSize(new Dimension(32, 32));
-        setMinimumSize(getPreferredSize());
-        setSize(getPreferredSize());
+        button.setPreferredSize(new Dimension(32, 32));
+        button.setMinimumSize(button.getPreferredSize());
+        button.setSize(button.getPreferredSize());
 
-        addActionListener(event -> {
-            JOptionPane.showMessageDialog(frame, text);
+        button.addActionListener(event -> {
+            JOptionPane.showMessageDialog(parentComponent, information);
         });
     }
 
-    public InformationButton(JFrame frame, String text) {
-        this(frame, DEFAULT_ICON, text);
+    public InformationButton(Component parentComponent, String information) {
+        this(parentComponent, DEFAULT_ICON, information);
+    }
+
+    public JButton getButton() {
+        return button;
     }
 }

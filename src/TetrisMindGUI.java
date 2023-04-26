@@ -14,7 +14,8 @@ public class TetrisMindGUI {
         Board board = new Board();
         frame.add(board);
 
-        frame.add(new InformationButton(frame, "Hello World!"));
+//        Music music = new Music();
+//        frame.add(music);
 
         frame.setVisible(true);
     }

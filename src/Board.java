@@ -11,7 +11,7 @@ public class Board extends JPanel implements KeyListener {
     protected static final int ROWS = 20;
     protected static final int COLS = 10;
     private static final Color BACKGROUND_COLOR = Color.DARK_GRAY;
-    private BoardPiece active;
+    private final BoardPiece active;
     private final Queue<Piece> nextQueue;
 
     public Board() {
@@ -41,10 +41,12 @@ public class Board extends JPanel implements KeyListener {
         }
     }
 
+    @Override
     public void keyTyped(KeyEvent e) {
         System.out.println("keyTyped");
     }
 
+    @Override
     public void keyPressed(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_LEFT) {
             System.out.println("left");
@@ -57,6 +59,7 @@ public class Board extends JPanel implements KeyListener {
         }
     }
 
+    @Override
     public void keyReleased(KeyEvent e) {
         System.out.println("keyReleased");
     }
