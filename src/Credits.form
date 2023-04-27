@@ -3,7 +3,7 @@
   <grid id="cbd77" binding="contentPane" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="10" left="10" bottom="10" right="10"/>
     <constraints>
-      <xy x="48" y="54" width="436" height="297"/>
+      <xy x="48" y="54" width="436" height="479"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -49,14 +49,14 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="a01c0" class="javax.swing.JTextArea" binding="credits">
+          <component id="1e795" class="javax.swing.JTextPane" binding="credits">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="50"/>
+                <preferred-size width="800" height="600"/>
               </grid>
             </constraints>
             <properties>
-              <text value="Tetris Mind&#10;By: Jeffrey Hu"/>
+              <text value="Tetris Mind&#10;By: Jeffrey Hu&#10;&#10;Works Cited&#10;&#10;Benson, S. (2022). Tetris, Mental Rotation, and Embodied Perception in Virtual Reality.&#10;&#10;Demaine, E., Hohenberger, S., &amp; Liben-Nowell, D. (2003). Tetris is Hard, Even to Approximate. COMPUTING AND COMBINATORICS, PROCEEDINGS, 2697, 351-363.&#10;&#10;DeWinter, J. (2017). The Tetris Effect: The Game That Hypnotized the World. American Journal of Play, 10(1), 124-126.&#10;&#10;Holmes, E., James, E., Coode-Bate, T., &amp; Deeprose, C. (2009). Can playing the computer game &quot;Tetris&quot; reduce the build-up of flashbacks for trauma? A proposal from cognitive science. PloS One, 4(1), E4153.&#10;&#10;Khanolkar, P. R., &amp; McLean, P. D. (2012). 100-Percenting It: Videogame Play Through the Eyes of Devoted Gamers. Sociological Forum, 27(4), 961–985. http://www.jstor.org/stable/23362160&#10;&#10;Lau‐Zhu, A., Holmes, E., Butterfield, S., &amp; Holmes, J. (2017). Selective Association Between Tetris Game Play and Visuospatial Working Memory: A Preliminary Investigation. Applied Cognitive Psychology, 31(4), 438-445.&#10;&#10;Lindstedt, J. (2017). The Building Blocks of Expertise: Examining Extreme Experts in the Video Game &quot;Tetris&quot;.&#10;&#10;Schmidt, M. E., &amp; Vandewater, E. A. (2008). Media and Attention, Cognition, and School Achievement. The Future of Children, 18(1), 63–85. http://www.jstor.org/stable/20053120"/>
             </properties>
           </component>
         </children>

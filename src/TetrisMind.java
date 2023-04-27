@@ -20,12 +20,23 @@ public class TetrisMind extends JFrame {
 
         musicToggleButton.setMnemonic(KeyEvent.VK_M);
         musicToggleButton.addActionListener(e -> JOptionPane.showMessageDialog(TetrisMind.this, "Music toggle button clicked"));
-        musicInformationButton.addActionListener(e -> JOptionPane.showMessageDialog(TetrisMind.this, "Info button clicked"));
 
         creditsButton.setMnemonic(KeyEvent.VK_C);
-        creditsButton.addActionListener(event -> {
+        creditsButton.addActionListener(e -> {
             Credits credits = new Credits();
             credits.setVisible(true);
+        });
+
+        musicInformationButton.setIcon(new ImageIcon("assets/info-32x32.png"));
+        musicInformationButton.addActionListener(e -> {
+            MusicInformation musicInformation = new MusicInformation();
+            musicInformation.setVisible(true);
+        });
+
+        leaderboardInformationButton.setIcon(new ImageIcon("assets/info-32x32.png"));
+        leaderboardInformationButton.addActionListener(e -> {
+            LeaderboardInformation leaderboardInformation = new LeaderboardInformation();
+            leaderboardInformation.setVisible(true);
         });
     }
 

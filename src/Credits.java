@@ -1,22 +1,16 @@
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class Credits extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
-    private JTextArea credits;
+    private JTextPane credits;
 
     public Credits() {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
 
-        buttonOK.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onOK();
-            }
-        });
+        buttonOK.addActionListener(e -> onOK());
 
         pack();
     }
