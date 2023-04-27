@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.event.KeyEvent;
 
 public class TetrisMind extends JFrame {
     private JToggleButton musicToggleButton;
@@ -18,10 +17,8 @@ public class TetrisMind extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
 
-        musicToggleButton.setMnemonic(KeyEvent.VK_M);
         musicToggleButton.addActionListener(e -> JOptionPane.showMessageDialog(TetrisMind.this, "Music toggle button clicked"));
 
-        creditsButton.setMnemonic(KeyEvent.VK_C);
         creditsButton.addActionListener(e -> {
             Credits credits = new Credits();
             credits.setVisible(true);
